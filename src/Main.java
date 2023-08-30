@@ -10,17 +10,18 @@ public class Main {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
-        Calculator calc = new Calculator();
+        //aqui instanciei o objeto calc
+
 
         System.out.printf("Enter Radius: ");
         double radius = sc.nextDouble();
 
-        double c = calc.circumferece(radius);
-        double v = calc.volume(radius);
+        double c = Calculator.circumferece(radius);
+        double v = Calculator.volume(radius);
 
         System.out.printf("Circuference %.2f%n", c);
         System.out.printf("Volume %.2f%n", v);
-        System.out.printf("PI value %.2f%n", calc.PI);
+        System.out.printf("PI value %.2f%n", Calculator.PI);
 
         sc.close();
 
